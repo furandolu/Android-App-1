@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><!-- xmlのバージョンと文字エンコーディング宣言 -->
+<manifest xmlns:android="https://schemas.android.com/apk/res/android"<!-- Android名前空間の定義（固定設定） -->
+    package="orust.co.jp.myapplication"<!-- パッケージ名（GooglePlayのURL） -->
+    <uses-permission android:name="android.permission.INTERNET"/><!-- インターネットに接続するためのパーミッション設定 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/><!-- 外部ストレージに書き込むためのパーミッション設定 -->
+    <application<!-- アプリの内部構造 -->
+        android:allowBackup="true"<!-- バックアップ処理（trueで有効） -->
+        android:icon="@mipmap/ic_launcher"<!-- アイコン画像の設定（保存場所はres\drawableフォルダからres\mipmapフォルダに変更推奨） -->
+        android:label="@string/app_name"<!-- ホーム画面やアプリ一覧で表示されるタイトル（res\valuesフォルダのstrings.xmlに記述） -->
+        android:supportsRtl="true"<右から左に記述する言語の設定>
+        android:theme="@style/AppTheme" ><!-- 各画面のスタイル設定（文字色や背景などcssみたいなもの。res\valuesフォルダのstyles.xmlに記述。AndroidAPIレベルが14以上に使える） -->
+        <activity<!-- Activityは画面 ⇒ １つの画面を１つのActivityで管理　Activity（画面）を１つ追加する場合はActivityタグも１つ追加 -->
+            android:name=".MainActivity"<!-- Activityファイルのパスを指定（Activity名だけの省略で可） -->
+            android:label="@string/app_name" ><!-- アクティビティ内でのタイトル表示 -->
+            <intent-filter><!-- 他のアプリとの連携や起動などを記述（Action、Category、Dataの３種類） -->
+                <action android:name="android.intent.action.MAIN" /><!-- このActivity（画面）がアプリのトップ画面であることを示す -->
+                <category android:name="android.intent.category.LAUNCHER" /><!-- ホームのアイコンから起動可能であることを示す -->
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

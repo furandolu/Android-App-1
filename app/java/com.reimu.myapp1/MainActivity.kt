@@ -30,4 +30,17 @@ class MainActivity : AppCompatActivity() {
         actionBarDrawerToggle.syncState()
 
        }
+           override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        // ボタン要素（オブジェクト）を取得
+        val buttonToAboutActivity = findViewById<Button>(R.id.button_to_sub)
+
+        // ボタンタップ時のイベントリスナー
+        buttonToAboutActivity.setOnClickListener {
+            val intent = Intent(this, AboutActivity::class.java)
+            startActivity(intent)
+        }
+           }
 }

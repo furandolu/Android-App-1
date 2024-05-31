@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?><!-- xmlのバージョンと文字エンコーディング宣言 -->
 <manifest xmlns:android="https://schemas.android.com/apk/res/android"<!-- Android名前空間の定義（固定設定） -->
-    package="orust.co.jp.myapplication"<!-- パッケージ名（GooglePlayのURL） -->
-    <uses-permission android:name="android.permission.INTERNET"/><!-- インターネットに接続するためのパーミッション設定 -->
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/><!-- 外部ストレージに書き込むためのパーミッション設定 -->
+    package="com.reimu.myapp1"
     <application<!-- アプリの内部構造 -->
         android:allowBackup="true"<!-- バックアップ処理（trueで有効） -->
         android:icon="@mipmap/ic_launcher"<!-- アイコン画像の設定（保存場所はres\drawableフォルダからres\mipmapフォルダに変更推奨） -->

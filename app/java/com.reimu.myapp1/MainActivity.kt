@@ -14,4 +14,20 @@ class MainActivity : AppCompatActivity() {
         webView.webViewClient = WebViewClient()
         webView.loadUrl("https://www.google.com/")
     }
+       override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        //Toolbarを登録
+        setSupportActionBar(toolbar)
+
+        //ハンバーガーメニューのアイコンを実装
+        //第４、５引数はアクセシビリティで使うみたい。
+        val actionBarDrawerToggle = ActionBarDrawerToggle(
+            this, drawer_layout, toolbar, R.string.app_name, R.string.app_name
+        )
+        drawer_layout.addDrawerListener(actionBarDrawerToggle)
+        actionBarDrawerToggle.syncState()
+
+       }
 }

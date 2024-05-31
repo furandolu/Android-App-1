@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">おみくじ</string>
+    <string name="result_text">...</string>
+    <string name="button_text">今日の運勢は</string>
+</resources>

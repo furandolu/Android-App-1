@@ -2,7 +2,7 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:checkableBehavior="single">
-        <item android:icon="@drawable/ic_android_black_24dp" android:title="このブラウザについて" android:id="@+id/drawer_menu_java" />
-        <item android:icon="@drawable/ic_android_black_24dp" android:title="このブラウザはAndroidのWEBviewをベースとしています。" android:id="@+id/drawer_menu_kotlin"/>
+        <item android:icon="@drawable/about_ic" android:title="このブラウザについて" android:id="@+id/drawer_menu_java" />
+        <item android:icon="@drawable/" android:title="このブラウザはAndroidのWEBviewをベースとしています。" android:id="@+id/drawer_menu_kotlin"/>
     </group>
 </menu>

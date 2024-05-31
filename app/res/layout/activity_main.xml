@@ -25,6 +25,7 @@
         android:layout_height="match_parent"
         android:id="@+id/navigation_drawer"
         app:menu="@menu/drawer_menu"
+        app:headerLayout="@layout/drawer_header_layout"
         android:layout_gravity="start"/>
 
 

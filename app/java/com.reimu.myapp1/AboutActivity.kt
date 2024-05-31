@@ -3,7 +3,6 @@ import android.os.Bundle
 import android.webkit.WebView
 
 class AboutActivity : AppCompatActivity() {
-val imageView: ImageView = findViewById(R.id.testImageView)
 imageView.setImageResource(R.mipmap.ic_about)
 textView.text = "Reimu Browser"
 textView.text = "バージョン 1.0"
